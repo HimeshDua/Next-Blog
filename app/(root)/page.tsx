@@ -3,7 +3,7 @@ import StartUpCards from "@/components/StartUpCards";
 import { getAllStartups } from "@/lib/actions/data";
 
 export default async function Home({ searchParams }: { searchParams: { query?: string } }) {
-    const query = searchParams?.query || "";
+    const {query} = searchParams;
 
 
     const posts = await getAllStartups(query);
