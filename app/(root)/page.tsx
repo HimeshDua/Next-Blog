@@ -1,15 +1,15 @@
-"use client";
 import SearchForm from "@/components/SearchForm";
 import StartUpCards from "@/components/StartUpCards";
 import { getAllStartups } from "@/lib/actions/data";
 
-import { useSearchParams } from "next/navigation";
+interface PageProps {
+  searchParams: Promise<{ query?: string }>;
+}
 
-export default async function Home() {
-  const searchParams = useSearchParams();
-  const query = searchParams.get("query");
+export default async function Home({ searchParams }: PageProps) {
+  const query = (await searchParams).query;
 
-  const posts = await getAllStartups(query as string);
+  const posts = (await getAllStartups(query)) || [];
 
   return (
     <>
@@ -22,7 +22,7 @@ export default async function Home() {
           Submit Ideas, Vote on Pitches and Get Noticed in Virtual Competitions.
         </p>
 
-        <SearchForm query={query as string} />
+        <SearchForm query={query} />
       </section>
 
       <section className="container mb-16">
