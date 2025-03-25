@@ -46,34 +46,32 @@ const StartupForm = () => {
             const result = await res.json();
 
             if (res.ok) {
-                toast({
-                    title: "Success",
-                    description: "Your startup pitch has been created successfully",
-                });
+                toast.success("Your startup pitch has been created successfully");
 
                 router.push(`/startup/${result._id}`); // ✅ Redirect to new startup page
             } else {
-                toast({
-                    title: "Error",
+                toast("Error", {
                     description: result?.error || "Something went wrong",
-                    variant: "destructive",
                 });
             }
         } catch (error) {
             if (error instanceof z.ZodError) {
                 const fieldErrors = error.flatten().fieldErrors;
-                setErrors(fieldErrors as Record<string, string>);
+                setErrors(
+                    Object.keys(fieldErrors).reduce<Record<string, string>>((acc, key) => {
+                        if (fieldErrors[key] && fieldErrors[key][0]) {
+                            acc[key] = fieldErrors[key][0];
+                        }
+                        return acc;
+                    }, {})
+                );
 
-                toast({
-                    title: "Validation Error",
+                toast("Validation Error", {
                     description: "Please fix the highlighted fields",
-                    variant: "destructive",
-                });
+                })
             } else {
-                toast({
-                    title: "Error",
+                toast("Error", {
                     description: "An unexpected error has occurred",
-                    variant: "destructive",
                 });
             }
         } finally {
