@@ -7,11 +7,11 @@ export async function getAllStartups(query?: string) {
     const filter = query ? {title: {$regex: query, $options: "i"}} : {};
 
     await dbConnect();
-    const startups = await Startup.find(filter).sort({createdAt: -1}).populate("author", "_id name avatar");
+    const startups = await Startup.find(filter).sort({createdAt: -1}).populate("author", "_id name avatar").lean();
 
     return startups.map((startup) => ({
-        ...startup.toObject(),
-        _id: startup._id.toString(),
-        createdAt: startup.createdAt ? startup.createdAt.toISOString() : new Date().toISOString(),
+        ...startup,
+        _id: String(startup._id),
+        createdAt: startup.createdAt ? new Date(startup.createdAt).toISOString() : new Date().toISOString(),
     }));
 }

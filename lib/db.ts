@@ -2,6 +2,8 @@
 import mongoose from "mongoose";
 
 const MONGODB_URI = process.env.MONGODB_URI as string;
+console.log("🔗 Connecting to MongoDB:", process.env.MONGODB_URI);
+
 if (!MONGODB_URI) {
     throw new Error("Please define the MONGODB_URI environment variable in .env.local");
 }
@@ -15,7 +17,7 @@ declare global {
     } | undefined;
 }
 
-let cache = global.mongooseCache || { conn: null, promise: null };
+let cache = global.mongooseCache || {conn: null, promise: null};
 global.mongooseCache = cache;
 
 
