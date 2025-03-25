@@ -2,13 +2,14 @@ import SearchForm from "@/components/SearchForm";
 import StartUpCards from "@/components/StartUpCards";
 import { getAllStartups } from "@/lib/actions/data";
 
-export default async function Home({
-  searchParams,
-}: {
-  searchParams: { query?: string };
-}) {
-  const query = searchParams?.query || ""; // Ensure it's always a string
-  const posts = await getAllStartups(query); // ✅ Await the promise
+interface PageProps {
+  searchParams: Promise<{ query?: string }>;
+}
+
+export default async function Home({ searchParams }: PageProps) {
+  const query = (await searchParams).query;
+
+  const posts = (await getAllStartups(query)) || [];
 
   return (
     <>
@@ -20,6 +21,7 @@ export default async function Home({
         <p className="sub-heading !max-w-3xl">
           Submit Ideas, Vote on Pitches and Get Noticed in Virtual Competitions.
         </p>
+
         <SearchForm query={query} />
       </section>
 
@@ -28,7 +30,7 @@ export default async function Home({
           {query ? `Search Results For "${query}"` : "Search For A Startup"}
         </p>
         <ul className="card_grid mt-7">
-          {posts.length > 0 ? ( // ✅ Now posts is an array
+          {posts.length > 0 ? (
             posts.map((post) => (
               <StartUpCards
                 key={post._id.toString()}
@@ -42,7 +44,7 @@ export default async function Home({
               />
             ))
           ) : (
-            <p>No results found</p>
+            <p className="text-center w-full">No results found</p>
           )}
         </ul>
       </section>
