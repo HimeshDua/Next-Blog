@@ -3,7 +3,7 @@ import { formatDate } from "@/lib/utils";
 import Link from "next/link";
 import { EyeIcon, ArrowRight, Verified } from "lucide-react";
 
-interface StartupTypeCard {
+declare interface StartupTypeCard {
     createdAt: string;
     views: number;
     author: { _id: string; name: string; avatar: string; verified?: boolean };
