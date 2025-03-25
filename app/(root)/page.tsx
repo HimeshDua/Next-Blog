@@ -40,7 +40,7 @@ export default function Home() {
         if (isMounted) {
           setPosts(data || []);
         }
-      } catch (err) {
+      } catch {
         if (isMounted) setError("Failed to fetch startups.");
       } finally {
         if (isMounted) setLoading(false);
