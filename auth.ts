@@ -1,7 +1,7 @@
 import NextAuth from "next-auth";
 import GitHub from "@auth/core/providers/github";
-import dbConnect from "@/lib/db";
 import Author from "@/models/Author.model";
+import dbConnect from "@/lib/db";
 
 export const {handlers, signIn, signOut, auth} = NextAuth({
     providers: [
