@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="869c3b09-774f-45ec-b50b-7937b3eb9e48" name="Changes" comment="time for initial deployment and tests 15">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="869c3b09-774f-45ec-b50b-7937b3eb9e48" name="Changes" comment="time for initial deployment and tests 15" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,7 +104,7 @@
       <workItem from="1742836761046" duration="6488000" />
       <workItem from="1742875117674" duration="7632000" />
       <workItem from="1742899021569" duration="4936000" />
-      <workItem from="1742922424303" duration="6826000" />
+      <workItem from="1742922424303" duration="7093000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit from Create Next App">
       <option name="closed" value="true" />
@@ -228,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742929254285</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="time for initial deployment and tests 15">
+      <option name="closed" value="true" />
+      <created>1742929437587</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1742929437587</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
