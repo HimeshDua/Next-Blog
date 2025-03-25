@@ -5,9 +5,9 @@ import { getAllStartups } from "@/lib/actions/data";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
-interface PageProps {
-  searchParams: Promise<{ query?: string }>;
-}
+// interface PageProps {
+//   searchParams: Promise<{ query?: string }>;
+// }
 
 export default function Home() {
   const searchParams = useSearchParams();
