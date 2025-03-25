@@ -1,21 +1,22 @@
 import SearchForm from "@/components/SearchForm";
 import StartUpCards from "@/components/StartUpCards";
-import {getAllStartups} from "@/lib/actions/data";
+import { getAllStartups } from "@/lib/actions/data";
 
-export default async function Home({searchParams}: { searchParams: Promise<{ query?: string }> }) {
-    const {query} = await searchParams;
+export default async function Home({ searchParams }: { searchParams: { query?: string } }) {
+    const query = searchParams?.query || "";
+
 
     const posts = await getAllStartups(query);
 
     return (
         <>
             <section className="pink_container pattern">
-                <h1 className="heading mx-auto">Pitch Your Startup,<br/> Connect With Entrepreneurs</h1>
+                <h1 className="heading mx-auto">Pitch Your Startup,<br /> Connect With Entrepreneurs</h1>
                 <p className="sub-heading !max-w-3xl">
                     Submit Ideas, Vote on Pitches and Get Noticed in Virtual Competitions.
                 </p>
 
-                <SearchForm query={query}/>
+                <SearchForm query={query} />
             </section>
 
             <section className="container mb-16">
