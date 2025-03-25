@@ -1,15 +1,27 @@
+"use client";
 import SearchForm from "@/components/SearchForm";
 import StartUpCards from "@/components/StartUpCards";
 import { getAllStartups } from "@/lib/actions/data";
+import { useSearchParams } from "next/navigation";
+import { useEffect, useState } from "react";
 
 interface PageProps {
   searchParams: Promise<{ query?: string }>;
 }
 
-export default async function Home({ searchParams }: PageProps) {
-  const query = (await searchParams).query;
+export default function Home() {
+  const searchParams = useSearchParams();
+  const query = searchParams.get("query") || "";
 
-  const posts = (await getAllStartups(query)) || [];
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data: any = await getAllStartups(query);
+      setPosts(data || []);
+    };
+    fetchData();
+  }, [query]);
 
   return (
     <>
