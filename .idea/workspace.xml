@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="869c3b09-774f-45ec-b50b-7937b3eb9e48" name="Changes" comment="time for initial deployment and tests">
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;HimeshDua&quot;
+  }
+}</component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="bfaffa15-b014-49f9-92d0-a52f75d208cb" />
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:HimeshDua/Next-Blog.git&quot;,
+    &quot;accountId&quot;: &quot;bfaffa15-b014-49f9-92d0-a52f75d208cb&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/app/components/Navbar.tsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/layout.tsx" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2uhjiWXIt1QMDuCogikvmjAS1r9" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;ShowUsagesActions.previewPropertyKey&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dell/Downloads/Catppuccin_Theme-3.4.1.zip&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.dsoftware.ghmanager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Code Folder\\Next\\chatgpt\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Code Folder\Next\chatgpt\app\(root)" />
+      <recent name="D:\Code Folder\Next\chatgpt\lib" />
+      <recent name="D:\Code Folder\Next\chatgpt" />
+      <recent name="D:\Code Folder\Next\chatgpt\app" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.26053.12" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="869c3b09-774f-45ec-b50b-7937b3eb9e48" name="Changes" comment="" />
+      <created>1742707830805</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742707830805</updated>
+      <workItem from="1742707832977" duration="1296000" />
+      <workItem from="1742709140786" duration="271000" />
+      <workItem from="1742709429076" duration="799000" />
+      <workItem from="1742711498448" duration="2621000" />
+      <workItem from="1742715709943" duration="21787000" />
+      <workItem from="1742752891362" duration="5953000" />
+      <workItem from="1742807127975" duration="1614000" />
+      <workItem from="1742810656442" duration="148000" />
+      <workItem from="1742810813097" duration="1691000" />
+      <workItem from="1742817612755" duration="10688000" />
+      <workItem from="1742836761046" duration="6488000" />
+      <workItem from="1742875117674" duration="7632000" />
+      <workItem from="1742899021569" duration="4936000" />
+      <workItem from="1742922424303" duration="1422000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit from Create Next App">
+      <option name="closed" value="true" />
+      <created>1742810982993</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742810982993</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Ui and Mongoose Schemas are ready">
+      <option name="closed" value="true" />
+      <created>1742832254287</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742832254288</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Ui and Mongoose Schemas are ready now it's time for the Routes action">
+      <option name="closed" value="true" />
+      <created>1742888126785</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1742888126786</updated>
+    </task>
+    <task id="LOCAL-00004" summary="time for initial deployment and tests">
+      <option name="closed" value="true" />
+      <created>1742903769599</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1742903769600</updated>
+    </task>
+    <task id="LOCAL-00005" summary="time for initial deployment and tests">
+      <option name="closed" value="true" />
+      <created>1742903996421</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1742903996421</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit from Create Next App" />
+    <MESSAGE value="Ui and Mongoose Schemas are ready" />
+    <MESSAGE value="Ui and Mongoose Schemas are ready now it's time for the Routes action" />
+    <MESSAGE value="time for initial deployment and tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="time for initial deployment and tests" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/layout.tsx</url>
+          <line>5</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/SearchFormReset.tsx</url>
+          <line>16</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
