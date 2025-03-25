@@ -14,7 +14,7 @@ const authorSchema = new Schema<AuthorInterface>(
         username: {type: String, required: true, unique: true},
         email: {type: String, required: true, unique: true},
         avatar: {type: String, required: true},
-        bio: {type: String, required: true},
+        bio: {type: String, required: true, default: "This user has not added a bio yet."},
     },
     {timestamps: true}
 );

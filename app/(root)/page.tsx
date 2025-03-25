@@ -2,24 +2,6 @@ import SearchForm from "@/components/SearchForm";
 import StartUpCards from "@/components/StartUpCards";
 import {getAllStartups} from "@/lib/actions/data";
 
-interface Author {
-    _id: number;
-    name: string;
-    avatar: string;
-}
-
-interface StartUpTypeCard {
-    _createdAt: Date;
-    views: number;
-    author: Author;
-    _id: number;
-    title: string;
-    description: string;
-    image: string;
-    slug: string;
-    category: string;
-}
-
 export default async function Home({searchParams}: { searchParams: Promise<{ query?: string }> }) {
     const {query} = await searchParams;
 
@@ -43,13 +25,22 @@ export default async function Home({searchParams}: { searchParams: Promise<{ que
                 </p>
                 <ul className="card_grid mt-7">
                     {posts?.length > 0 ? (
-                        posts.map((post: StartUpTypeCard) => (
-                            <StartUpCards key={post._id} post={post}/>
+                        posts.map((post) => (
+                            <StartUpCards
+                                key={post._id.toString()}
+                                post={{
+                                    ...post,
+                                    createdAt: post.createdAt ? new Date(post.createdAt).toISOString() : new Date().toISOString(),
+                                    _id: post._id.toString(),
+                                }}
+                            />
                         ))
                     ) : (
                         <p>No results found</p>
                     )}
                 </ul>
+
+
             </section>
         </>
     );

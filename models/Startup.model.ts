@@ -6,7 +6,7 @@ interface StartupInterface {
     author: Types.ObjectId;
     views: number;
     description: string;
-    image: string;
+    link: string;
     category: string;
     pitch: string;
 }
@@ -18,7 +18,7 @@ const startupSchema = new Schema<StartupInterface>(
         author: {type: Schema.Types.ObjectId, ref: "Author", required: true},
         views: {type: Number, default: 0},
         description: {type: String, required: true},
-        image: {type: String, required: true},
+        link: {type: String, required: true},
         category: {type: String, required: true},
         pitch: {type: String, required: true},
     },
