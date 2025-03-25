@@ -2,13 +2,16 @@
 import dbConnect from "@/lib/db";
 import Startup from "@/models/Startup.model";
 
+export async function getAllStartups(query?: string) {
 
-export async function getAllStartups() {
+    const filter = query ? {title: {$regex: query, $options: "i"}} : {};
+
     await dbConnect();
+    const startups = await Startup.find(filter).sort({createdAt: -1}).populate("author", "_id name avatar");
 
-    const startups = await Startup.find()
-        .populate("author", "_id name avatar") // pulls in author info
-        .sort({createdAt: -1}); // newest first
-
-    return JSON.parse(JSON.stringify(startups));
+    return startups.map((startup) => ({
+        ...startup.toObject(),
+        _id: startup._id.toString(),
+        createdAt: startup.createdAt ? startup.createdAt.toISOString() : new Date().toISOString(),
+    }));
 }

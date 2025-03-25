@@ -5,8 +5,7 @@ import {getAllStartups} from "@/lib/actions/data";
 export default async function Home({searchParams}: { searchParams: Promise<{ query?: string }> }) {
     const {query} = await searchParams;
 
-    // Fetch startup posts from database
-    const posts = await getAllStartups();
+    const posts = await getAllStartups(query);
 
     return (
         <>
@@ -20,7 +19,7 @@ export default async function Home({searchParams}: { searchParams: Promise<{ que
             </section>
 
             <section className="container mb-16">
-                <p className="heading  text-4xl mx-auto">
+                <p className="heading bg-white  ms-0 font-medium text-black text-3xl mx-auto">
                     {query ? `Search Results For "${query}"` : "Search For A Startup"}
                 </p>
                 <ul className="card_grid mt-7">
