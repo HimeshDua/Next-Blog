@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="869c3b09-774f-45ec-b50b-7937b3eb9e48" name="Changes" comment="time for initial deployment and tests 15" />
+    <list default="true" id="869c3b09-774f-45ec-b50b-7937b3eb9e48" name="Changes" comment="time for initial deployment and tests 15">
+      <change afterPath="$PROJECT_DIR$/components/Search.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(root)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/page.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,6 +109,7 @@
       <workItem from="1742875117674" duration="7632000" />
       <workItem from="1742899021569" duration="4936000" />
       <workItem from="1742922424303" duration="7093000" />
+      <workItem from="1742938027859" duration="791000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit from Create Next App">
       <option name="closed" value="true" />
@@ -273,12 +278,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app/layout.tsx</url>
-          <line>5</line>
+          <line>6</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/components/SearchFormReset.tsx</url>
-          <line>16</line>
+          <line>17</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
